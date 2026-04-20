@@ -1,9 +1,10 @@
 # KITTI 3D Object Detection: End-to-End Graph Transformer Model
 > Computer Vision Course Project | Implements a LiDAR 3D object detection model based on Graph Transformer for car detection on the KITTI dataset
 
-📖 Project Overview
+# 📖 Project Overview
 This is the final assignment for the 3D Computer Vision course. We address the problem of 3D object detection from LiDAR point clouds in autonomous driving scenarios by designing and implementing an end-to-end Graph Transformer detection model.
 Unlike traditional voxel-based or point-based methods, our approach directly constructs graphs on raw point clouds and leverages Graph Transformer layers to capture both local geometric structures and global contextual information, achieving competitive performance on the KITTI benchmark.
+
 ✨ Key Innovations
 Adaptive K-nearest neighbor graph construction: Dynamically adjusts the number of neighbors based on local point density to effectively handle the uneven distribution of LiDAR point clouds
 Graph Transformer layer enhanced with relative position encoding: Improves spatial relationship modeling by incorporating 3D relative coordinates into the attention mechanism
@@ -25,7 +26,7 @@ pip install torch-geometric torch-scatter torch-sparse torch-cluster torch-splin
 # Install other dependencies
 pip install -r requirements.txt
 
-📊 Dataset Preparation
+# 📊 Dataset Preparation
 We use the KITTI 3D Object Detection Dataset.
 Download Required Files
 Go to the KITTI 3D Object Detection Benchmark page
@@ -44,7 +45,9 @@ data/
     └── testing/
         ├── calib/          # Contains 7518 calibration files (.txt)
         └── velodyne/       # Contains 7518 point cloud files (.bin)
-Data Preprocessing
+
+# Data Preprocessing
+
 No additional preprocessing is required. The dataset loader will automatically process the raw point clouds and labels during training.
 graph-transformer-3d-detection/
 ├── data/                   # Dataset directory (not included in repository)
