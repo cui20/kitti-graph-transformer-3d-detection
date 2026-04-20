@@ -12,10 +12,11 @@ Hybrid loss function: Combines Focal Loss for classification and Huber Loss for 
 Complete end-to-end pipeline: Implements full training, validation, inference, and visualization workflows specifically tailored for the KITTI 3D object detection dataset
 
 ## 🛠️ Environment Setup
-- System: macOS/Linux/Windows
-- Python: 3.12
-- CUDA: 12.4 (required for NVIDIA GPU, Mac can run inference on CPU)
-- Dependency Installation:
+- **System**: macOS/Linux/Windows
+- **Python**: 3.12
+- **CUDA**: 12.4 (required for NVIDIA GPU, Mac can run inference on CPU)
+
+### Dependency Installation
 ```bash
 # Install PyTorch first (Mac version)
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0
@@ -26,7 +27,7 @@ pip install torch-geometric torch-scatter torch-sparse torch-cluster torch-splin
 # Install other dependencies
 pip install -r requirements.txt
 
-## 📊 Dataset Preparation
+📊 Dataset Preparation
 We use the KITTI 3D Object Detection Dataset.
 Download Required Files
 Go to the KITTI 3D Object Detection Benchmark page
